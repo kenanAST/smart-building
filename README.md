@@ -31,11 +31,26 @@ The data flow in the Smart Building App follows this sequence:
 
 To run the Smart Building App locally, follow these steps:
 
-1. Clone the repository from the provided source code location.
-2. Install the required dependencies for the React and Node-RED components by following the instructions in their respective README files.
-3. Configure the WebSocket connection settings in both the React and Node-RED components to ensure proper communication.
-4. Start the Node-RED server and the React development server.
-5. Access the application through the provided URL or localhost address.
+1. Install Node-RED by following the official installation guide: https://nodered.org/docs/getting-started/
+
+2. Import the Node-RED control flow from the project repository:
+
+   - In the Node-RED interface, go to the menu bar and select "Import" > "Import nodes" to import the control flow.
+   - Import the controller flow located in `./node-red/controllerFlow.json`
+
+3. Clone the repository from the provided source code location.
+
+4. Set up the React application:
+
+   - Navigate to the React project directory: `cd smart-building-app`
+   - Install the required dependencies: `npm install`
+   - Start the development server: `npm run dev`
+
+5. Configure the WebSocket connection settings in both the React and Node-RED components to ensure proper communication.
+
+6. Start the Node-RED server.
+
+7. Access the application through the provided URL or localhost address.
 
 ## Usage
 
@@ -43,14 +58,6 @@ Once the Smart Building App is running, the 3D building model in Three.js will u
 
 ![Usage Example](./usage.png)
 
-## Contributing
-
-If you wish to contribute to the Smart Building App project, please follow the guidelines outlined in the CONTRIBUTING.md file located in the repository.
-
 ## License
 
 The Smart Building App is released under the [MIT License](https://opensource.org/licenses/MIT). See the LICENSE file for more details.
-
-## Support
-
-If you encounter any issues or have questions regarding the Smart Building App, please refer to the project's documentation or reach out to the development team for assistance.
